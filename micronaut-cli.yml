@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: mn.openapi.java
+---
+testFramework: junit
+sourceLanguage: java

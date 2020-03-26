@@ -1,0 +1,31 @@
+openapi: 3.0.1
+info:
+  title: mn-openapi1
+  version: "0.0"
+paths:
+  /fop:
+    post:
+      operationId: foo
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                someId:
+                  type: integer
+                  format: int64
+                  nullable: false
+        required: true
+      responses:
+        default:
+          description: foo default response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MyResponse'
+components:
+  schemas:
+    MyResponse:
+      type: object
