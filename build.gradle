@@ -9,17 +9,20 @@ plugins {
 version "0.1"
 group "mn.openapi.java"
 
-repositories {
+repositories 
+{
     mavenCentral()
     maven { url "https://jcenter.bintray.com" }
 }
 
-configurations {
+configurations 
+{
     // for dependencies that are needed for development only
     developmentOnly 
 }
 
-dependencies {
+dependencies 
+{
     annotationProcessor platform("io.micronaut:micronaut-bom:$micronautVersion")
     annotationProcessor "io.micronaut:micronaut-inject-java"
     annotationProcessor "io.micronaut:micronaut-validation"
